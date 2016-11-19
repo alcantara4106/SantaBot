@@ -1,4 +1,16 @@
 #BlueJ class context
-comment0.params=str
-comment0.target=java.lang.String[]\ cleanup1(java.lang.String)
-numComments=1
+comment0.params=
+comment0.target=java.lang.String\ getGreeting()
+comment1.params=statement
+comment1.target=java.lang.String\ processor1(java.lang.String)
+comment2.params=str
+comment2.target=java.lang.String[]\ cleanup1(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getRandomResponse()
+comment4.params=thing
+comment4.target=java.lang.String\ stringConverter(java.lang.String[])
+comment5.params=arraything\ thing
+comment5.target=boolean\ has(java.lang.String[],\ java.lang.String)
+comment6.params=arraything\ thing
+comment6.target=int\ arrIndexOf(java.lang.String[],\ java.lang.String)
+numComments=7
