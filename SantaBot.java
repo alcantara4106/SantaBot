@@ -103,8 +103,8 @@ public class SantaBot
     public String processor1(String statement, Object lastReply){
         String response = "";
         String[] statementArray = cleanup(statement);
-        System.out.println("thing1: " + stringConverter(statementArray));
-        System.out.println("thing2: " + statement);
+        //System.out.println("thing1: " + stringConverter(statementArray));
+        //System.out.println("thing2: " + statement);
         if(!(context(statementArray, lastReply) == "")){
             return context(statementArray, lastReply);
         }
@@ -318,6 +318,7 @@ public class SantaBot
      * 
      * @return strarray, a String array which is the cleaned-up version of str
      */
+    //Lines 321-345 implement requirement 3
     public static String[] cleanup(String str){
         str = str.trim().toLowerCase(); //Lowercases entire string
         String[] punctuation = {"!","?",",",".","'","\"","[","]","{","}",":",";","/","\\",
@@ -535,5 +536,4 @@ public class SantaBot
         
         
     }
-
 
