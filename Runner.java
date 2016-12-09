@@ -57,6 +57,6 @@ public class Runner
             }
             counter ++;
         }
-        System.out.println ("Santa: Good-bye.");
+        System.out.println ("\nSanta: Good-bye.");
     }
 }

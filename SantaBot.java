@@ -30,7 +30,7 @@ public class SantaBot
      * processor1() that it couldn't get a special response
      */
     public String context(String[] statementArray, Object lastReply){
-        //Lines 33-43 fulfill requirements 4aii and 4aiv 
+        //Lines 33-88 fulfill requirements 4aii and 4aiv 
         if(lastReply == "I am Santa Claus, the fat old guy who wears red."){
             if(has(statementArray, "no")){
                 return "Do I hear sass?";
@@ -113,17 +113,12 @@ public class SantaBot
             return transform1(statementArray);
         }
         
-        //Lines 117-125 and 353-372 fulfill requirement 4ai
-        if(statement == ""){
-            final int NUMBER_OF_RESPONSES = 2;
-            double r = Math.random();
-            int whichResponse = (int)(r * NUMBER_OF_RESPONSES);
-            if (whichResponse == 0){response = "I couldn't hear you properly, can you say that again?";}
-            else if (whichResponse == 1){response = "Did you mean to say something?";}
-            return response;
+        //Lines 117-119 fulfill requirement 4ai
+        if(statementArray[0].equals("")){
+            return "I couldn't hear you properly, can you say that again?";
         }
         
-        //Lines 128-305 fulfill requirement 2a
+        //Lines 121-302 fulfill requirement 2a
         if(has(statementArray,"hi")||has(statementArray,"hello")){
             return "Hello there.";  
         }
@@ -318,7 +313,7 @@ public class SantaBot
      * 
      * @return strarray, a String array which is the cleaned-up version of str
      */
-    //Lines 322-345 implement requirement 3
+    //Lines 317-340 implement requirement 3
     public static String[] cleanup(String str){
         str = str.trim().toLowerCase(); //Lowercases entire string
         String[] punctuation = {"!","?",",",".","'","\"","[","]","{","}",":",";","/","\\",
@@ -349,7 +344,7 @@ public class SantaBot
      * 
      * @return a random response as a String
      */
-    //Line 353-372 fulfill requirement 2b
+    //Line 348-367 fulfill requirement 2b and 4ai
     private String getRandomResponse()
     {
         final int NUMBER_OF_RESPONSES = 10;
@@ -456,7 +451,7 @@ public class SantaBot
      * @return finalString, a String containing Santabot's answer, or just "" if there's
      * nothing to transform
      */
-    //Lines 160-end fulfill requirement for 4aiii
+    //Lines 454-end fulfill requirement for 4aiii
     public static String transform1(String[] theArray){
         //System.out.println("way before carnage: "+stringConverter(theArray));
         String finalString = new String();
@@ -533,7 +528,5 @@ public class SantaBot
         }
         return statementArray;
     }
-        
-        
-    }
+}
 

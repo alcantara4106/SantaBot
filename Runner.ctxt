@@ -1,5 +1,5 @@
 #BlueJ class context
 comment0.params=args
 comment0.target=void\ main(java.lang.String[])
-comment0.text=\n\ main()\ is\ the\ main\ method,\ and\ runs\ SantaBot\n\ \n\ @param\ String[]\ args;\ does\ absolutely\ nothing\n\ \n\ @return\ nothing\n\ \n
+comment0.text=\r\n\ main()\ is\ the\ main\ method,\ and\ runs\ SantaBot\r\n\ \r\n\ @param\ String[]\ args;\ does\ absolutely\ nothing\r\n\ \r\n\ @return\ nothing\r\n\ \r\n
 numComments=1
