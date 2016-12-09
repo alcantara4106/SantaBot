@@ -285,7 +285,7 @@ public class SantaBot
         
         if(has(statementArray,"when")){
             if(has(statementArray,"christmas")){
-                return "December 24th.";
+                return "December 25th.";
             }
             return "Christmas day.";
         }
@@ -318,7 +318,7 @@ public class SantaBot
      * 
      * @return strarray, a String array which is the cleaned-up version of str
      */
-    //Lines 321-345 implement requirement 3
+    //Lines 322-345 implement requirement 3
     public static String[] cleanup(String str){
         str = str.trim().toLowerCase(); //Lowercases entire string
         String[] punctuation = {"!","?",",",".","'","\"","[","]","{","}",":",";","/","\\",
